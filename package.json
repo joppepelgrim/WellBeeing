@@ -1,0 +1,22 @@
+{
+  "name": "wellbeeing",
+  "version": "1.0.0",
+  "description": "Application that helps beekeepers index their beehives.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InjuMichorius/WellBeeing.git"
+  },
+  "author": "inju@inju.nl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InjuMichorius/WellBeeing/issues"
+  },
+  "homepage": "https://github.com/InjuMichorius/WellBeeing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
