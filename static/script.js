@@ -1,17 +1,20 @@
 const blueViolet = document.querySelector('.blueviolet');
 const orange = document.querySelector('.orange');
 const btn = document.querySelector('.btn');
+let currentColor = {}
 
 blueViolet.addEventListener('click', function(){
-    alert('hoi')
+    currentColor = 'blueviolet'
+    return
+
 })
 
 orange.addEventListener('click', function(){
-    alert('fakka')
+    currentColor = 'orange'
 })
 
 btn.addEventListener('click', function(){
-    alert('fakka')
+    console.log(currentColor)
 })
 
 
