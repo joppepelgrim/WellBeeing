@@ -14,7 +14,7 @@ orange.addEventListener('click', function(){
 })
 
 btn.addEventListener('click', function(){
-    console.log(currentColor)
+    btn.style.backgroundColor = currentColor;
 })
 
 
