@@ -1,33 +1,22 @@
-window.addEventListener('load', () =>{
-    const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext('2d');
+const blueViolet = document.querySelector('.blueviolet');
+const orange = document.querySelector('.orange');
+const btn = document.querySelector('.btn');
 
-    //consts
-    let painting = false;
+blueViolet.addEventListener('click', function(){
+    alert('hoi')
+})
 
-    function startPosition(e){
-        painting = true;
-        draw(e)
-    }
-    function finishedPosition(){
-        painting = false;
-        ctx.beginPath();
-    }
-    function draw(e){
-        if(!painting) return;
-        ctx.lineWidth = 10;
-        ctx.lineCap = 'round';
+orange.addEventListener('click', function(){
+    alert('fakka')
+})
 
-        ctx.lineTo(e.clientX, e.clientY)
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY)
-    }
+btn.addEventListener('click', function(){
+    alert('fakka')
+})
 
-    //Eventlisteners
-    canvas.addEventListener('mousedown', startPosition);
-    canvas.addEventListener('mouseup', finishedPosition);
-    canvas.addEventListener('mousemove', draw);
-});
 
-console.log('Check!')
+
+
+
+
+console.log('tets')
