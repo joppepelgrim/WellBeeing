@@ -1,25 +1,40 @@
-const blueViolet = document.querySelector('.blueviolet');
-const orange = document.querySelector('.orange');
-const btn = document.querySelector('.btn');
-let currentColor = {}
+// Select color input
+let color = document.querySelector('.colorPicker')
+let table = document.querySelector('.pixelCanvas')
+let sizePicker = document.querySelector('.sizePicker')
 
-blueViolet.addEventListener('click', function(){
-    currentColor = 'blueviolet'
-    return
 
+let height = document.querySelector('.inputHeight').value;
+let width = document.querySelector('.inputWidth').value;
+makeGrid(height, width);
+
+sizePicker.addEventListener('click', (e) => {
+
+    e.preventDefault();
+
+    let height = document.querySelector('.inputHeight').value;
+    let width = document.querySelector('.inputWidth').value;
+    table.firstChild.remove();
+
+    makeGrid(height, width);
+    //Makes grid
 })
 
-orange.addEventListener('click', function(){
-    currentColor = 'orange'
-})
+//Select size input
 
-btn.addEventListener('click', function(){
-    btn.style.backgroundColor = currentColor;
-})
+//When size is submitted by user call makegrid()
+
+function makeGrid(height, width) {
 
 
-
-
-
-
-console.log('tets')
+    for (let i = 0; i <= height; i++) {
+        let row = table.insertRow(i);
+        for (let j = 0; j <= width; j++) {
+            let cell = row.insertCell(j);
+            cell.addEventListener('click', (e) => {
+                console.log(e);
+                cell.style.backgroundColor = color.value;
+            })
+        }
+    }
+}

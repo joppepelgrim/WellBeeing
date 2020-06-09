@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
-    <link rel="shortcut icon" type="image/png" href="../images/bee.png">
     <title>WellBeeing</title>
 </head>
 
 <body>
-    <label for="orange">orange
-        <input type="radio" name="color" class="orange">
-    </label>
-    <label for="blueviolet">blueviolet
-        <input type="radio" name="color" class="blueviolet">
-    </label>
+    <form action="" class="sizePicker">
+        <input type="number" name="height" class="inputHeight" min="1" value="1">
+        <input type="number" name="width" class="inputWidth" min="1" value="1">
+        <input type="submit">
+    </form>
 
-    <div class="btn"></div>
+    <input type="color" class="colorPicker">
 
+    <table class="pixelCanvas"></table>
     <script src="../static/script.js"></script>
 </body>
 
