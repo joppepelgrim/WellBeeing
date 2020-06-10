@@ -1,39 +1,55 @@
 // Select color input
-let color = document.querySelector('.colorPicker')
-let table = document.querySelector('.pixelCanvas')
-let sizePicker = document.querySelector('.sizePicker')
+const table = document.querySelector('.pixelCanvas')
 
+const koninginnencel = document.querySelector('.koninginnencel')
+const broed = document.querySelector('.broed')
+const nectar = document.querySelector('.nectar')
+const honing = document.querySelector('.honing')
+const stuifmeel = document.querySelector('.stuifmeel')
 
-let height = document.querySelector('.inputHeight').value;
-let width = document.querySelector('.inputWidth').value;
+let currentColor = null
+
+function koninginnencelColor() {
+    currentColor = '#02055A'
+}
+
+function broedColor() {
+    currentColor = '#7D0303'
+}
+
+function nectarColor() {
+    currentColor = '#EC7474'
+}
+
+function honingColor() {
+    currentColor = '#F07C00'
+}
+
+function stuifmeelColor() {
+    currentColor = '#FACA61'
+}
+
+koninginnencel.addEventListener('click', koninginnencelColor)
+broed.addEventListener('click', broedColor)
+nectar.addEventListener('click', nectarColor)
+honing.addEventListener('click', honingColor)
+stuifmeel.addEventListener('click', stuifmeelColor)
+
+//Creating grid
+const height = 11;
+const width = 7;
 makeGrid(height, width);
 
-sizePicker.addEventListener('click', (e) => {
-
-    e.preventDefault();
-
-    let height = document.querySelector('.inputHeight').value;
-    let width = document.querySelector('.inputWidth').value;
-    table.firstChild.remove();
-
-    makeGrid(height, width);
-    //Makes grid
-})
-
-//Select size input
-
-//When size is submitted by user call makegrid()
-
 function makeGrid(height, width) {
-
-
     for (let i = 0; i <= height; i++) {
         let row = table.insertRow(i);
         for (let j = 0; j <= width; j++) {
             let cell = row.insertCell(j);
+
             cell.addEventListener('click', (e) => {
                 console.log(e);
-                cell.style.backgroundColor = color.value;
+                cell.style.backgroundColor = currentColor;
+                console.log(currentColor)
             })
         }
     }
