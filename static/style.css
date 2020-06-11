@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-html {
-    background-image: url(../images/background.jpg);
+body{
+    background: url(../static/images/background.jpg);
 }
 
 table,
