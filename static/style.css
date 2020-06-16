@@ -4,8 +4,34 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primairy-color: #F9B133;
+}
+
 body{
     background: url(../static/images/background.jpg);
+    font-family: roboto;
+}
+
+header{
+    width: 100%;
+}
+
+.inner-header{
+    background-color: red;
+}
+
+.inner-header span{
+    display: flex;
+    justify-content: end;
+}
+
+.inner-header button{
+    border: none;
+    background-color: var(--primairy-color);
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 6px;
 }
 
 table,

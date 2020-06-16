@@ -36,8 +36,8 @@ honing.addEventListener('click', honingColor)
 stuifmeel.addEventListener('click', stuifmeelColor)
 
 //Creating grid
-const height = 11;
-const width = 7;
+const height = 7;
+const width = 11;
 makeGrid(height, width);
 
 function makeGrid(height, width) {
