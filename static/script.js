@@ -1,4 +1,3 @@
-// Select color input
 const table = document.querySelector('.pixelCanvas')
 
 const koninginnencel = document.querySelector('.koninginnencel')
