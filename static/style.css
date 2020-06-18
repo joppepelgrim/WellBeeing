@@ -103,3 +103,33 @@ td {
     width: 40px;
 }
 
+.gum{
+    width: 2.5em;
+    display: block;
+    margin: 1em auto 1.5em;
+}
+
+div.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+div.button{
+    width: 4em;
+}
+
+.button img{
+    display: block;
+    width: 3.2em;
+    padding: 0.5em;
+    margin: 0 auto 0.5em;
+    background-color: white;
+    border: solid 1px #333;
+    border-radius: 50%;
+}
+
+.button span{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}

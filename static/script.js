@@ -1,5 +1,7 @@
 const table = document.querySelector('.pixelCanvas')
 
+const gum = document.querySelector('.gum')
+
 const koninginnencel = document.querySelector('.koninginnencel')
 const broed = document.querySelector('.broed')
 const nectar = document.querySelector('.nectar')
@@ -7,6 +9,10 @@ const honing = document.querySelector('.honing')
 const stuifmeel = document.querySelector('.stuifmeel')
 
 let currentColor = null
+
+function gumColor() {
+    currentColor = 'transparent'
+}
 
 function koninginnencelColor() {
     currentColor = '#02055A'
@@ -28,6 +34,7 @@ function stuifmeelColor() {
     currentColor = '#FACA61'
 }
 
+gum.addEventListener('click', gumColor)
 koninginnencel.addEventListener('click', koninginnencelColor)
 broed.addEventListener('click', broedColor)
 nectar.addEventListener('click', nectarColor)
