@@ -11,26 +11,50 @@
 
 <body>
     <header>
-        <img src="../static/images/header.jpg" alt="">
-        <div class="inner-header">
-            <span>Terug</span>
-            <button>Gereed</button>
-        </div>
+        <nav>
+            <ul>
+                <li><img src="../static/images/menu.svg" alt="" class="menu"></li>
+                <li>Inspecties</li>
+                <li class="right"><img src="../static/images/language.jpg" alt="" class="language"></li>
+                <li class="right"><img src="../static/images/avatar.jpg" alt="" class="avatar"></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p>Laatst geïnspecteerd op 12-06-20</p>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <div class="inner-header">
+            <a>&lt Terug</a>
+            <button class="gereed">Gereed</button>
+        </div>
+        <p class="raam">&lt Raam 1 &gt</p>
+        <p class="date">Eerste inspectie</p>
+        <div class="smileys">
+            <img src="../static/images/happy.png" alt="">
+            <img src="../static/images/okay.png" alt="">
+            <img src="../static/images/sad.png" alt="">
+        </div>
 
     </main>
     <table class="pixelCanvas"></table>
-
-    <button class="koninginnencel">Koninginnencel</button>
-    <button class="broed">Broed</button>
-    <button class="nectar">Nectar</button>
-    <button class="honing">Honing</button>
-    <button class="stuifmeel">Stuifmeel</button>
+    <div>
+        <button class="koninginnencel">Koninginnencel</button>
+        <span>Koninginnencel</span>
+    </div>
+    <div>
+        <button class="broed">Broed</button>
+        <span>Broed</span>
+    </div>
+    <div>
+        <button class="nectar">Nectar</button>
+        <span>Nectar</span>
+    </div>
+    <div>
+        <button class="honing">Honing</button>
+        <span>Honing</span>
+    </div>
+    <div>
+        <button class="stuifmeel">Stuifmeel</button>
+        <span>Stuifmeel</span>
+    </div>
     <script src="../static/script.js"></script>
 </body>
 

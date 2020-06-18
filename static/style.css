@@ -13,25 +13,75 @@ body{
     font-family: roboto;
 }
 
-header{
-    width: 100%;
-}
-
-.inner-header{
-    background-color: red;
-}
-
-.inner-header span{
-    display: flex;
-    justify-content: end;
-}
-
-.inner-header button{
-    border: none;
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
     background-color: var(--primairy-color);
-    color: white;
-    padding: 0.5em 2em;
+}
+
+nav ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5em 1em;
+}
+
+nav ul li img.avatar{
+    height: 32px;
+}
+
+nav ul li img.language{
+    height: 32px;
+}
+
+nav ul li.right{
+    float: right;
+}
+
+.menu{
+    height: 32px;
+}
+
+div.inner-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+p.raam{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p.date{
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+div a {
+    margin: 1em 0 0 1em;
+    font-weight: bold;
+}
+
+.gereed{
+    background-color: var(--primairy-color);
+    border: none;
     border-radius: 6px;
+    color: white;
+    padding: 0.6em 1.2em;
+    margin: 1em 1em 0 0;
+}
+
+.smileys{
+    margin: 1em auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smileys img{
+    width: 2.5em;
 }
 
 table,
@@ -46,9 +96,10 @@ table {
 }
 
 tr {
-    height: 20px;
+    height: 40px;
 }
 
 td {
-    width: 20px;
+    width: 40px;
 }
+
