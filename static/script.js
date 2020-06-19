@@ -23,7 +23,7 @@ function broedColor() {
 }
 
 function nectarColor() {
-    currentColor = '#EC7474'
+    currentColor = '#FACA61'
 }
 
 function honingColor() {
@@ -31,7 +31,7 @@ function honingColor() {
 }
 
 function stuifmeelColor() {
-    currentColor = '#FACA61'
+    currentColor = '#EC7474'
 }
 
 gum.addEventListener('click', gumColor)

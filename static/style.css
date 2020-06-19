@@ -47,7 +47,17 @@ div.inner-header{
     display: flex;
     justify-content: space-between;
 }
+/*
+main{
+    margin-top: 1em;
+    background-color: white;
+}
 
+.wit{
+    background-color: white;
+    height: 1em;
+}
+*/
 p.raam{
     text-align: center;
     font-weight: bold;
